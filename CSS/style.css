@@ -1,0 +1,353 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+.class-header
+{
+    display: flex; /*convert from display block to inline block*/
+    justify-content: space-between;
+    color: white;
+    border-top: solid red 3px;
+    background-color: rgb(58, 11,102);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    align-items: center; /*aline item center in navbar  */
+    padding: 0px 100px; /* padding top bottom left right (check on it) */
+    z-index: 1000;
+    
+}
+nav a
+{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px ;
+    font-size: 18px;
+    transition: ease 0.5s;
+}
+nav a:hover
+{
+    color: red;
+    font-size: 20px;
+}
+.class-cursor
+{
+    background: linear-gradient(
+        to right bottom,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.9)
+    ),
+    url("../images/2.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    align-items: center;
+ }
+    .class-cursor div
+    {
+    margin-left: 30px;
+    }
+    .class-cursor span
+    {
+        text-transform: capitalize;
+        color: red;
+    }
+/* anchor tag  */
+.class-cursor  a
+{
+    color: white;
+    background-color:rgb(58, 11, 102);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px ;
+    display: inline-block;
+    margin-top: 10px;
+    transition: transform ease 0.5s;
+}
+.class-cursor a:hover
+{
+    background-color: red;
+    transform: scale(1.1);
+}
+.class-services h2
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.class-services .container .card
+{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 6px 6px;
+    padding: 5px;
+}
+.container h3
+{
+    color: red;
+}
+.class-services .shape-icon
+{
+    font-size: 50px;
+    color: rgb(58, 11, 102);
+}
+
+/* Portofoli classes */
+
+.class-portofilio
+{
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+.class-portofilio h2
+{
+    border-bottom: red solid;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.class-portofilio .container
+{
+    /* constant in any container */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.class-portofilio .card
+{
+    width: 30%;
+    color: black;
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.class-portofilio img
+{
+    width: 100%;
+    height: 250px;
+    border-radius: 0px 0px 20px 20px ;  
+}
+.class-portofilio button
+{
+    padding: 2px 10px;
+    background-color: rgb(58, 11, 102);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 15px; 
+}
+.class-portofilio button:hover
+{
+    background-color: red;
+    font-size: 18px;
+}
+.class-portofilio .card p
+{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 2px;
+}
+/* _______________________________________________________Nti group_____________________________ */
+.nti-group
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 50px;
+    align-items: center;
+
+}
+
+.nti-gourp-discrbtoin
+{
+    width: 60%;
+    text-align: center;
+}
+
+.nit-groud-img
+{
+    width: 25%;
+    box-shadow: 0px 0px 0px rgb(0 0 0/20%);
+    border-radius: 10px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+/* <!-- ******************************Members************************************************** --> */
+
+.member
+{
+    padding: 30px;
+    background-image: url("../images/MinyaBG.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.member img
+{
+    border: solid white;
+    border-radius: 48% 52% 51% 49% / 39% 41% 59% 61% ;
+
+    width: 16em;
+    height: 16em;
+}
+/* <!-- ******************************Minya Aros el sayed************************************************** --> */
+
+.nit-groud-img-rtl
+{
+    width: 25%;
+    box-shadow: 0px 0px 0px rgb(0 0 0/20%);
+    border-radius: 10px;
+    margin-left: 30px;
+    
+}
+/* <!-- *************************************************************************************************************** -->
+ */
+ .map
+ {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+
+ }
+ .map div
+ {
+    width: 100%;
+    padding: 10px;
+
+    box-shadow: 0px 10px 35px 0px lightblue !important;
+    
+ }
+ iframe
+ {
+    width: 100% !important;
+ }
+ /* ************************************************************************************ */
+ footer {
+    text-align: center;
+    padding: 1px; 
+    background-color: rgb(58, 11, 102);
+    color: white;
+    border-bottom: solid red 3px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .Up-arrow
+  {
+    position: fixed;
+    color: red;
+    right: 10px;
+    bottom: 10px;
+    font-size: 40px;
+    padding: 40px 10px;
+  }
+  .Up-arrow:hover
+  {
+    color:  rgb(58, 11, 102);
+  }
+  
+  /* scroll smoothly */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(58, 11, 102);
+  }
+  /* ______________________________________Contact__________________________________ */
+  .contact
+  {
+    padding: 100px;
+    text-align:center ;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg,rgb(5,57,91)0%, rgba(0,205,246,1)100%);
+  }
+  .contact h2
+  {
+    color: white;
+    margin: 50px;
+    border-bottom: solid white;
+    display: inline-block;
+  }
+  .input-form
+  {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .input-form label
+  {
+    position: absolute;
+    top:  30%;
+    left: 5px;
+    transition: ease 1s;
+    pointer-events: none;
+  }
+  .input-form input
+  {
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding: 5px 5px;
+  }
+  .input-form input:hover ~ label,
+  .input-form input:valid ~ label
+  {
+    opacity: 0;
+    top: 4%;
+  }
+
+  .send
+  {
+    color: white;
+    background-color: rgb(85, 10, 156);
+    border: none;
+    border-radius: 20px;
+    padding: 0px 20px;
+    transition: ease 0.5s;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+}
+.send:hover
+{
+    background-color: red;
+    transform: scale(1.1);
+
+}
